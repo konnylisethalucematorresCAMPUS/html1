@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="Inicio.html">Inicio</a>
+      <a href="Servicio.html">Servicio</a>
+      <a href="Nosotros.html">Nosotros</a>
+      <a href="Galeria.html">Galeria</a>
+      <a href="Contacto.html">Contacto</a>
+    </nav>
+  </header>
+  <h1>Contacto</h1>
+
+  <h3>Formulario</h3>
+    <form action="index.html" method="get">
+      <div>
+        <label for="nombre">Nombre...</label>
+        <input
+        type="number" 
+        name="Nombres" 
+        placeholder="Ingrese su nombre" 
+        pattern="^[0-9]*$" 
+        required
+        id="nombre">
+      </div>
+
+        <div>
+          <input type="number" name="cantidad" step="0.5">
+        </div>
+          <div>
+            <input type="color">
+          </div>
+                <div>
+                  <input type="checkbox" name="tipo[]" id="html">
+                  <label for="html">HTML</label>
+                </div>
+                    <div>
+                        <input type="checkbox" name="tipo[]" id="css">
+                        <label for="css">CSS</label>
+                    </div>
+                      <div>
+                        <input type="checkbox" name="tipo[]" id="JavaScript">
+                        <label for="JavaScript">JAVASCRIPT</label>
+                      </div>
+                        <div>
+                          <label for="hombre">Hombre</label>
+                          <input type="radio" name="genero" id="hombre">
+                        </div>
+                          <div>
+                            <label for="mujer">Mujer</label>
+                            <input type="radio" name="genero" id="mujer">
+                          </div>
+                            <div> 
+                              <label for="otro">Otro</label>
+                              <input type="radio" name="genero" id="otro">
+                            </div>
+
+    <button>enviar</button>
+</form>
+</body>
+
+</html>
