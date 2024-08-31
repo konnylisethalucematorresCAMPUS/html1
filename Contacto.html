@@ -20,51 +20,66 @@
   <h1>Contacto</h1>
 
   <h3>Formulario</h3>
-    <form action="index.html" method="get">
-      <div>
-        <label for="nombre">Nombre...</label>
-        <input
-        type="number" 
-        name="Nombres" 
-        placeholder="Ingrese su nombre" 
-        pattern="^[0-9]*$" 
-        required
-        id="nombre">
-      </div>
+  <form action="index.html" method="get" enctype="multipart/form-data">
+    <div>
+      <label for="nombre">Nombre...</label>
+      <input type="number" name="Nombres" placeholder="Ingrese su nombre" pattern="^[0-9]*$" required id="nombre">
+    </div>
 
-        <div>
-          <input type="number" name="cantidad" step="0.5">
-        </div>
-          <div>
-            <input type="color">
-          </div>
-                <div>
-                  <input type="checkbox" name="tipo[]" id="html">
-                  <label for="html">HTML</label>
-                </div>
-                    <div>
-                        <input type="checkbox" name="tipo[]" id="css">
-                        <label for="css">CSS</label>
-                    </div>
-                      <div>
-                        <input type="checkbox" name="tipo[]" id="JavaScript">
-                        <label for="JavaScript">JAVASCRIPT</label>
-                      </div>
-                        <div>
-                          <label for="hombre">Hombre</label>
-                          <input type="radio" name="genero" id="hombre">
-                        </div>
-                          <div>
-                            <label for="mujer">Mujer</label>
-                            <input type="radio" name="genero" id="mujer">
-                          </div>
-                            <div> 
-                              <label for="otro">Otro</label>
-                              <input type="radio" name="genero" id="otro">
-                            </div>
+    <div>
+      <input type="number" name="cantidad" step="0.5">
+    </div>
+    <div>
+      <input type="color">
+    </div>
+    <div>
+      <input type="checkbox" name="tipo[]" id="html">
+      <label for="html">HTML</label>
+    </div>
+    <div>
+      <input type="checkbox" name="tipo[]" id="css">
+      <label for="css">CSS</label>
+    </div>
+    <div>
+      <input type="checkbox" name="tipo[]" id="JavaScript">
+      <label for="JavaScript">JAVASCRIPT</label>
+    </div>
+    <div>
+      <label for="hombre">Hombre</label>
+      <input type="radio" name="genero" id="hombre">
+    </div>
+    <div>
+      <label for="mujer">Mujer</label>
+      <input type="radio" name="genero" id="mujer">
+    </div>
+    <div>
+      <label for="otro">Otro</label>
+      <input type="radio" name="genero" id="otro">
+    </div>
 
+    <div>
+      <select name="Ciudad" id="Ciudad">
+        <option value="Bucaramanga">Bucaramanga</option>
+        <option value="Bogota">Bogota</option>
+        <option value="Cali">Cali</option>
+        <option value="Medellin">Medellin</option>
+        <option value="Pereira">Pereira</option>
+
+      </select>
+    </div>
+    <br>
+    <div>
+      <input type="date">
+    </div>
+    <br>
+    <div>
+      <input type="file" name="file" id="file">
+    </div>
+    <br>
+    <textarea name="mensaje" id="mensaje"></textarea>
+    
     <button>enviar</button>
-</form>
+  </form>
 </body>
 
 </html>
